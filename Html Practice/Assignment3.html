@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Assignment</title>
+</head>
+<body>
+
+<h1>HTML Assignment - 15 Questions</h1>
+
+<!-- Q1 -->
+<section>
+<h2>1. Resume</h2>
+<header>
+    <h3>Ankit tyagi</h3>
+    <p>ankit@gmail.com | 8279447576</p>
+</header>
+<nav>
+    <a href="#about">About</a> |
+    <a href="#skills">Skills</a> |
+    <a href="#projects">Projects</a> |
+    <a href="#education">Education</a>
+</nav>
+<main>
+<section id="about"><h3>About Me</h3><p>Computer Science student interested in programming and cybersecurity.</p></section>
+<section id="skills"><h3>Skills</h3><ul><li>Java</li><li>Python</li><li>HTML</li></ul></section>
+<section id="projects"><h3>Projects</h3><ol><li>NIDS</li><li>Career App</li></ol></section>
+<section id="education"><h3>Education</h3>
+<table border="1"><tr><th>Course</th><th>Institute</th><th>Year</th></tr>
+<tr><td>B.Tech CSE</td><td>GLA University</td><td>2027</td></tr></table>
+</section>
+</main>
+<footer>&copy; 2026 Ankit tyagi</footer>
+</section>
+
+<hr>
+
+<!-- Q2 -->
+<section>
+<h2>2. Product Catalog</h2>
+<table border="1">
+<tr><th>Product</th><th>Image</th><th>Description</th><th>Price</th><th>Availability</th></tr>
+<tr><td>Laptop</td><td><img src="laptop.jpg" width="60"></td><td>Fast laptop</td><td>₹50000</td><td rowspan="2">Available</td></tr>
+<tr><td>Phone</td><td><img src="phone.jpg" width="60"></td><td>Smart phone</td><td>₹20000</td></tr>
+<tr><td colspan="5">Free Delivery</td></tr>
+</table>
+</section>
+
+<hr>
+
+<!-- Q3 -->
+<section>
+<h2>3. Course Registration</h2>
+<form>
+<fieldset>
+<legend>Registration</legend>
+Name: <input type="text"><br><br>
+Email: <input type="email"><br><br>
+Course:
+<select><option>Java</option><option>Python</option><option>Web Development</option></select>
+<br><br><input type="submit" value="Register">
+</fieldset>
+</form>
+<table border="1">
+<tr><th>Day</th><th>Time</th><th>Instructor</th></tr>
+<tr><td>Monday</td><td>10 AM</td><td>Mr. Sharma</td></tr>
+<tr><td>Friday</td><td>2 PM</td><td>Ms. Gupta</td></tr>
+</table>
+</section>
+
+<hr>
+
+<!-- Q4 -->
+<section>
+<h2>4. Company Layout</h2>
+<header><h3>TechNova</h3></header>
+<nav><a href="#">Home</a> | <a href="#">Services</a></nav>
+<main>
+<section><h3>About</h3><p>Technology company providing software solutions.</p></section>
+<section><h3>Services</h3><ul><li>Web Development</li><li>Cybersecurity</li></ul></section>
+</main>
+<aside><blockquote>"Innovation creates the future."</blockquote><p>— CEO</p></aside>
+<footer>Email: info@technova.com | India</footer>
+</section>
+
+<hr>
+
+<!-- Q5 -->
+<section>
+<h2>5. University Hierarchy</h2>
+<ul>
+<li>University
+    <ul>
+    <li>Computer Science
+        <ol>
+        <li>Java
+            <ul><li>OOP</li><li>Inheritance</li></ul>
+        </li>
+        <li>Cybersecurity
+            <ul><li>Networking</li><li>Cryptography</li></ul>
+        </li>
+        </ol>
+    </li>
+    <li>Electronics
+        <ol><li>Digital Electronics</li><li>Microprocessors</li></ol>
+    </li>
+    </ul>
+</li>
+</ul>
+</section>
+
+<hr>
+
+<!-- Q6 -->
+<section>
+<h2>6. Restaurant Menu</h2>
+<header><h3>Food Paradise</h3></header>
+<nav><a href="#starter">Starters</a> | <a href="#main">Main</a> | <a href="#dessert">Desserts</a></nav>
+
+<section id="starter"><h3>Starters</h3>
+<table border="1"><tr><th>Dish</th><th>Description</th><th>Price</th></tr>
+<tr><td>Paneer Tikka</td><td>Grilled Paneer</td><td>₹180</td></tr></table></section>
+
+<section id="main"><h3>Main Course</h3>
+<table border="1"><tr><th>Dish</th><th>Description</th><th>Price</th></tr>
+<tr><td>Biryani</td><td>Veg Biryani</td><td>₹220</td></tr></table></section>
+
+<section id="dessert"><h3>Desserts</h3>
+<table border="1"><tr><th>Dish</th><th>Description</th><th>Price</th></tr>
+<tr><td>Ice Cream</td><td>Vanilla</td><td>₹80</td></tr></table></section>
+
+<footer>Contact: 9876543210</footer>
+</section>
+
+<hr>
+
+<!-- Q7 -->
+<section>
+<h2>7. Conference Schedule</h2>
+<table border="1">
+<thead><tr><th>Session</th><th>Time</th><th>Topic</th><th>Speaker</th></tr></thead>
+<tbody>
+<tr><td>Morning</td><td>9 AM</td><td>AI</td><td>Dr. Sharma</td></tr>
+<tr><td>Afternoon</td><td>2 PM</td><td>Cybersecurity</td><td>Mr. Verma</td></tr>
+<tr><td>Evening</td><td>6 PM</td><td>Cloud</td><td>Ms. Gupta</td></tr>
+</tbody>
+<tfoot><tr><td colspan="4">End of Conference</td></tr></tfoot>
+</table>
+</section>
+
+<hr>
+
+<!-- Q8 -->
+<section>
+<h2>8. Student Report</h2>
+<h3>GLA University</h3>
+<table border="1" title="Student Marks">
+<tr><th rowspan="2">Subject</th><th colspan="2">Marks</th></tr>
+<tr><th>Max</th><th>Obtained</th></tr>
+<tr><td>Math</td><td>100</td><td>85</td></tr>
+<tr><td>Java</td><td>100</td><td>90</td></tr>
+<tr><td>Physics</td><td>100</td><td>80</td></tr>
+<tr><td>English</td><td>100</td><td>88</td></tr>
+<tr><td>DBMS</td><td>100</td><td>92</td></tr>
+<tr><td colspan="2">Total</td><td>435</td></tr>
+<tr><td colspan="2">Percentage</td><td>87%</td></tr>
+</table>
+</section>
+
+<hr>
+
+<!-- Q9 -->
+<section>
+<h2>9. Top 3 Travel Destinations</h2>
+<main>
+<article><h3>Paris</h3><img src="paris.jpg" width="100"><p>City of art and culture.</p><blockquote>Beautiful city.</blockquote></article>
+<article><h3>Dubai</h3><img src="dubai.jpg" width="100"><p>Modern and luxurious city.</p><blockquote>Amazing place.</blockquote></article>
+<article><h3>Tokyo</h3><img src="tokyo.jpg" width="100"><p>Technology and culture.</p><blockquote>Exciting city.</blockquote></article>
+</main>
+<aside><h3>Travel Tips</h3><ul><li>Carry documents</li><li>Plan transport</li></ul></aside>
+<footer>&copy; 2026 Travel Guide</footer>
+</section>
+
+<hr>
+
+<!-- Q10 -->
+<section>
+<h2>10. Dropdown Selection</h2>
+Country:
+<select><option selected>India</option><option>Japan</option></select>
+<br><br>
+State:
+<select><option selected>Uttar Pradesh</option><option>Rajasthan</option></select>
+<br><br>
+City:
+<select><option selected>Agra</option><option>Jaipur</option></select>
+<br><br>
+Tourist Place:
+<select><option selected>Taj Mahal</option><option>Hawa Mahal</option></select>
+<p>I selected India, Uttar Pradesh, Agra and Taj Mahal.</p>
+</section>
+
+<hr>
+
+<!-- Q11 -->
+<section>
+<h2>11. News Layout</h2>
+<header><h3>Daily News</h3></header>
+<nav>Sports | Technology | Politics</nav>
+<main>
+<article><h3>India Wins Match</h3><time>August 17, 2026</time><p>India won the match.</p><a href="#">Source</a></article>
+<article><h3>New AI Technology</h3><time>August 17, 2026</time><p>New AI technology launched.</p><a href="#">Source</a></article>
+<article><h3>New Policy Announced</h3><time>August 17, 2026</time><p>Government announced a new policy.</p><a href="#">Source</a></article>
+</main>
+<aside><h3>Popular Topics</h3><ul><li>AI</li><li>Cricket</li><li>Technology</li></ul></aside>
+<footer>Contact: news@example.com | &copy; 2026</footer>
+</section>
+
+<hr>
+
+<!-- Q12 -->
+<section>
+<h2>12. Quotation Showcase</h2>
+<section><h3>Motivation</h3><blockquote>Believe you can and you're halfway there.</blockquote><cite>Theodore Roosevelt</cite></section>
+<section><h3>Success</h3><blockquote>Success is not final.</blockquote><cite>Winston Churchill</cite></section>
+<section><h3>Life</h3><blockquote>Life is what happens while you are busy making plans.</blockquote><cite>John Lennon</cite></section>
+<p>Quotes inspire people by giving motivation and new perspectives.</p>
+</section>
+
+<hr>
+
+<!-- Q13 -->
+<section>
+<h2>13. Blog Layout</h2>
+<header><h3>My Blog</h3></header>
+<nav>Home | Blogs | About</nav>
+<main>
+<article><h3>My First Blog</h3><time>August 17, 2026</time><p>This is my first blog.</p><blockquote>Every expert was once a beginner.</blockquote></article>
+<article><h3>Things I Learned This Week</h3><time>August 17, 2026</time><p>I learned HTML and semantic tags.</p><blockquote>Learning never stops.</blockquote></article>
+</main>
+<footer>Written by Ankit Tyagi</footer>
+</section>
+
+<hr>
+
+<!-- Q14 -->
+<section>
+<h2>14. Movie Database</h2>
+<table border="1" title="Movie Database">
+<caption>Movies</caption>
+<tr><th>Movie</th><th>Genre</th><th>Year</th><th>IMDB</th><th>Link</th></tr>
+<tr><td>Inception</td><td>Sci-Fi</td><td>2010</td><td>8.8</td><td><a href="#">IMDB</a></td></tr>
+<tr><td>Interstellar</td><td>Sci-Fi</td><td>2014</td><td>8.7</td><td><a href="#">IMDB</a></td></tr>
+<tr><td colspan="5">More movies coming soon</td></tr>
+</table>
+<small>Note: Ratings are sample values.</small>
+</section>
+
+<hr>
+
+<!-- Q15 -->
+<section>
+<h2>15. Portfolio</h2>
+<header><h3>Ankit Tyagi</h3><p>Cybersecurity Student</p></header>
+<nav>About | Skills | Projects | Contact</nav>
+<main>
+<section><h3>About Me</h3><p>I am a CSE student interested in cybersecurity.</p><blockquote>Keep learning, keep growing.</blockquote></section>
+<section><h3>Skills</h3><ul><li>Java</li><li>Python</li><li>Cybersecurity</li></ul></section>
+<section><h3>Projects</h3><ol><li>NIDS</li><li>Career App</li></ol></section>
+</main>
+<aside><h3>Contact</h3><p>Email: ankit@gmail.com</p><p>Phone: 8279447576</p><a href="#">LinkedIn</a></aside>
+<footer>&copy; 2026 Ankit Tyagi</footer>
+</section>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Assignment</title>
+</head>
+<body>
+
+<h1>HTML Assignment - 15 Questions</h1>
+
+<!-- Q1 -->
+<section>
+<h2>1. Resume</h2>
+<header>
+    <h3>Ankit tyagi</h3>
+    <p>ankit@gmail.com | 8279447576</p>
+</header>
+<nav>
+    <a href="#about">About</a> |
+    <a href="#skills">Skills</a> |
+    <a href="#projects">Projects</a> |
+    <a href="#education">Education</a>
+</nav>
+<main>
+<section id="about"><h3>About Me</h3><p>Computer Science student interested in programming and cybersecurity.</p></section>
+<section id="skills"><h3>Skills</h3><ul><li>Java</li><li>Python</li><li>HTML</li></ul></section>
+<section id="projects"><h3>Projects</h3><ol><li>NIDS</li><li>Career App</li></ol></section>
+<section id="education"><h3>Education</h3>
+<table border="1"><tr><th>Course</th><th>Institute</th><th>Year</th></tr>
+<tr><td>B.Tech CSE</td><td>GLA University</td><td>2027</td></tr></table>
+</section>
+</main>
+<footer>&copy; 2026 Ankit tyagi</footer>
+</section>
+
+<hr>
+
+<!-- Q2 -->
+<section>
+<h2>2. Product Catalog</h2>
+<table border="1">
+<tr><th>Product</th><th>Image</th><th>Description</th><th>Price</th><th>Availability</th></tr>
+<tr><td>Laptop</td><td><img src="laptop.jpg" width="60"></td><td>Fast laptop</td><td>₹50000</td><td rowspan="2">Available</td></tr>
+<tr><td>Phone</td><td><img src="phone.jpg" width="60"></td><td>Smart phone</td><td>₹20000</td></tr>
+<tr><td colspan="5">Free Delivery</td></tr>
+</table>
+</section>
+
+<hr>
+
+<!-- Q3 -->
+<section>
+<h2>3. Course Registration</h2>
+<form>
+<fieldset>
+<legend>Registration</legend>
+Name: <input type="text"><br><br>
+Email: <input type="email"><br><br>
+Course:
+<select><option>Java</option><option>Python</option><option>Web Development</option></select>
+<br><br><input type="submit" value="Register">
+</fieldset>
+</form>
+<table border="1">
+<tr><th>Day</th><th>Time</th><th>Instructor</th></tr>
+<tr><td>Monday</td><td>10 AM</td><td>Mr. Sharma</td></tr>
+<tr><td>Friday</td><td>2 PM</td><td>Ms. Gupta</td></tr>
+</table>
+</section>
+
+<hr>
+
+<!-- Q4 -->
+<section>
+<h2>4. Company Layout</h2>
+<header><h3>TechNova</h3></header>
+<nav><a href="#">Home</a> | <a href="#">Services</a></nav>
+<main>
+<section><h3>About</h3><p>Technology company providing software solutions.</p></section>
+<section><h3>Services</h3><ul><li>Web Development</li><li>Cybersecurity</li></ul></section>
+</main>
+<aside><blockquote>"Innovation creates the future."</blockquote><p>— CEO</p></aside>
+<footer>Email: info@technova.com | India</footer>
+</section>
+
+<hr>
+
+<!-- Q5 -->
+<section>
+<h2>5. University Hierarchy</h2>
+<ul>
+<li>University
+    <ul>
+    <li>Computer Science
+        <ol>
+        <li>Java
+            <ul><li>OOP</li><li>Inheritance</li></ul>
+        </li>
+        <li>Cybersecurity
+            <ul><li>Networking</li><li>Cryptography</li></ul>
+        </li>
+        </ol>
+    </li>
+    <li>Electronics
+        <ol><li>Digital Electronics</li><li>Microprocessors</li></ol>
+    </li>
+    </ul>
+</li>
+</ul>
+</section>
+
+<hr>
+
+<!-- Q6 -->
+<section>
+<h2>6. Restaurant Menu</h2>
+<header><h3>Food Paradise</h3></header>
+<nav><a href="#starter">Starters</a> | <a href="#main">Main</a> | <a href="#dessert">Desserts</a></nav>
+
+<section id="starter"><h3>Starters</h3>
+<table border="1"><tr><th>Dish</th><th>Description</th><th>Price</th></tr>
+<tr><td>Paneer Tikka</td><td>Grilled Paneer</td><td>₹180</td></tr></table></section>
+
+<section id="main"><h3>Main Course</h3>
+<table border="1"><tr><th>Dish</th><th>Description</th><th>Price</th></tr>
+<tr><td>Biryani</td><td>Veg Biryani</td><td>₹220</td></tr></table></section>
+
+<section id="dessert"><h3>Desserts</h3>
+<table border="1"><tr><th>Dish</th><th>Description</th><th>Price</th></tr>
+<tr><td>Ice Cream</td><td>Vanilla</td><td>₹80</td></tr></table></section>
+
+<footer>Contact: 9876543210</footer>
+</section>
+
+<hr>
+
+<!-- Q7 -->
+<section>
+<h2>7. Conference Schedule</h2>
+<table border="1">
+<thead><tr><th>Session</th><th>Time</th><th>Topic</th><th>Speaker</th></tr></thead>
+<tbody>
+<tr><td>Morning</td><td>9 AM</td><td>AI</td><td>Dr. Sharma</td></tr>
+<tr><td>Afternoon</td><td>2 PM</td><td>Cybersecurity</td><td>Mr. Verma</td></tr>
+<tr><td>Evening</td><td>6 PM</td><td>Cloud</td><td>Ms. Gupta</td></tr>
+</tbody>
+<tfoot><tr><td colspan="4">End of Conference</td></tr></tfoot>
+</table>
+</section>
+
+<hr>
+
+<!-- Q8 -->
+<section>
+<h2>8. Student Report</h2>
+<h3>GLA University</h3>
+<table border="1" title="Student Marks">
+<tr><th rowspan="2">Subject</th><th colspan="2">Marks</th></tr>
+<tr><th>Max</th><th>Obtained</th></tr>
+<tr><td>Math</td><td>100</td><td>85</td></tr>
+<tr><td>Java</td><td>100</td><td>90</td></tr>
+<tr><td>Physics</td><td>100</td><td>80</td></tr>
+<tr><td>English</td><td>100</td><td>88</td></tr>
+<tr><td>DBMS</td><td>100</td><td>92</td></tr>
+<tr><td colspan="2">Total</td><td>435</td></tr>
+<tr><td colspan="2">Percentage</td><td>87%</td></tr>
+</table>
+</section>
+
+<hr>
+
+<!-- Q9 -->
+<section>
+<h2>9. Top 3 Travel Destinations</h2>
+<main>
+<article><h3>Paris</h3><img src="paris.jpg" width="100"><p>City of art and culture.</p><blockquote>Beautiful city.</blockquote></article>
+<article><h3>Dubai</h3><img src="dubai.jpg" width="100"><p>Modern and luxurious city.</p><blockquote>Amazing place.</blockquote></article>
+<article><h3>Tokyo</h3><img src="tokyo.jpg" width="100"><p>Technology and culture.</p><blockquote>Exciting city.</blockquote></article>
+</main>
+<aside><h3>Travel Tips</h3><ul><li>Carry documents</li><li>Plan transport</li></ul></aside>
+<footer>&copy; 2026 Travel Guide</footer>
+</section>
+
+<hr>
+
+<!-- Q10 -->
+<section>
+<h2>10. Dropdown Selection</h2>
+Country:
+<select><option selected>India</option><option>Japan</option></select>
+<br><br>
+State:
+<select><option selected>Uttar Pradesh</option><option>Rajasthan</option></select>
+<br><br>
+City:
+<select><option selected>Agra</option><option>Jaipur</option></select>
+<br><br>
+Tourist Place:
+<select><option selected>Taj Mahal</option><option>Hawa Mahal</option></select>
+<p>I selected India, Uttar Pradesh, Agra and Taj Mahal.</p>
+</section>
+
+<hr>
+
+<!-- Q11 -->
+<section>
+<h2>11. News Layout</h2>
+<header><h3>Daily News</h3></header>
+<nav>Sports | Technology | Politics</nav>
+<main>
+<article><h3>India Wins Match</h3><time>August 17, 2026</time><p>India won the match.</p><a href="#">Source</a></article>
+<article><h3>New AI Technology</h3><time>August 17, 2026</time><p>New AI technology launched.</p><a href="#">Source</a></article>
+<article><h3>New Policy Announced</h3><time>August 17, 2026</time><p>Government announced a new policy.</p><a href="#">Source</a></article>
+</main>
+<aside><h3>Popular Topics</h3><ul><li>AI</li><li>Cricket</li><li>Technology</li></ul></aside>
+<footer>Contact: news@example.com | &copy; 2026</footer>
+</section>
+
+<hr>
+
+<!-- Q12 -->
+<section>
+<h2>12. Quotation Showcase</h2>
+<section><h3>Motivation</h3><blockquote>Believe you can and you're halfway there.</blockquote><cite>Theodore Roosevelt</cite></section>
+<section><h3>Success</h3><blockquote>Success is not final.</blockquote><cite>Winston Churchill</cite></section>
+<section><h3>Life</h3><blockquote>Life is what happens while you are busy making plans.</blockquote><cite>John Lennon</cite></section>
+<p>Quotes inspire people by giving motivation and new perspectives.</p>
+</section>
+
+<hr>
+
+<!-- Q13 -->
+<section>
+<h2>13. Blog Layout</h2>
+<header><h3>My Blog</h3></header>
+<nav>Home | Blogs | About</nav>
+<main>
+<article><h3>My First Blog</h3><time>August 17, 2026</time><p>This is my first blog.</p><blockquote>Every expert was once a beginner.</blockquote></article>
+<article><h3>Things I Learned This Week</h3><time>August 17, 2026</time><p>I learned HTML and semantic tags.</p><blockquote>Learning never stops.</blockquote></article>
+</main>
+<footer>Written by Ankit Tyagi</footer>
+</section>
+
+<hr>
+
+<!-- Q14 -->
+<section>
+<h2>14. Movie Database</h2>
+<table border="1" title="Movie Database">
+<caption>Movies</caption>
+<tr><th>Movie</th><th>Genre</th><th>Year</th><th>IMDB</th><th>Link</th></tr>
+<tr><td>Inception</td><td>Sci-Fi</td><td>2010</td><td>8.8</td><td><a href="#">IMDB</a></td></tr>
+<tr><td>Interstellar</td><td>Sci-Fi</td><td>2014</td><td>8.7</td><td><a href="#">IMDB</a></td></tr>
+<tr><td colspan="5">More movies coming soon</td></tr>
+</table>
+<small>Note: Ratings are sample values.</small>
+</section>
+
+<hr>
+
+<!-- Q15 -->
+<section>
+<h2>15. Portfolio</h2>
+<header><h3>Ankit Tyagi</h3><p>Cybersecurity Student</p></header>
+<nav>About | Skills | Projects | Contact</nav>
+<main>
+<section><h3>About Me</h3><p>I am a CSE student interested in cybersecurity.</p><blockquote>Keep learning, keep growing.</blockquote></section>
+<section><h3>Skills</h3><ul><li>Java</li><li>Python</li><li>Cybersecurity</li></ul></section>
+<section><h3>Projects</h3><ol><li>NIDS</li><li>Career App</li></ol></section>
+</main>
+<aside><h3>Contact</h3><p>Email: ankit@gmail.com</p><p>Phone: 8279447576</p><a href="#">LinkedIn</a></aside>
+<footer>&copy; 2026 Ankit Tyagi</footer>
+</section>
+
+</body>
+</html>
