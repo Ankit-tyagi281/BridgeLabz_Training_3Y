@@ -1,0 +1,779 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Q5: Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Q5: Author -->
+    <meta name="author" content="Ashish Arya">
+
+    <!-- Q5: Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Q20: Description -->
+    <meta name="description" content="HTML Assignment containing 20 HTML questions">
+
+    <!-- Q20: Title -->
+    <title>HTML Assignment - All Questions</title>
+
+    <!-- Q20: Base URL -->
+    <base href="./">
+
+    <!-- Q20: Link to favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Q20: Style element - no CSS used -->
+    <style>
+    </style>
+
+    <!-- Q20: Script element -->
+    <script>
+    </script>
+
+</head>
+
+<body>
+
+    <h1>HTML Assignment - 20 Questions</h1>
+
+    <hr>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 1 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 1: YouTube Video using iframe</h2>
+
+    <p>Embedded YouTube Video:</p>
+
+    <iframe
+        width="80%"
+        height="50%"
+        src="https://www.youtube.com/embed/cjLhuG3MK68"
+        title="YouTube Video">
+    </iframe>
+
+    <br><br>
+
+    <p>
+        Original YouTube Link:
+        https://www.youtube.com/watch?v=cjLhuG3MK68
+    </p>
+
+    <hr>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 2 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 2: Google Map</h2>
+
+    <!-- loading="lazy" delays loading the map until it is close to being visible. -->
+
+    <iframe
+        src="https://www.google.com/maps?q=Etawah%2C%20Uttar%20Pradesh&output=embed"
+        title="Google Map of Etawah"
+        width="600"
+        height="450"
+        loading="lazy">
+    </iframe>
+
+    <hr>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 3 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 3: Two Iframes</h2>
+
+    <h3>Introduction Page</h3>
+
+    <iframe
+        width="600"
+        height="250"
+        title="Introduction Page"
+        srcdoc="
+            <!DOCTYPE html>
+            <html>
+            <body>
+                <h2>My Introduction</h2>
+                <p>Hello! My name is Ashish Arya.</p>
+                <p>I am a Computer Science Engineering student.</p>
+                <p>I am interested in Cybersecurity and Web Development.</p>
+            </body>
+            </html>
+        ">
+    </iframe>
+
+    <br><br>
+
+    <h3>My Favorite Hobby</h3>
+
+    <iframe
+        width="600"
+        height="250"
+        title="Favorite Hobby Page"
+        srcdoc="
+            <!DOCTYPE html>
+            <html>
+            <body>
+                <h2>My Favorite Hobby</h2>
+                <p>My favorite hobby is learning about technology.</p>
+                <p>I enjoy programming, cybersecurity and exploring new technologies.</p>
+            </body>
+            </html>
+        ">
+    </iframe>
+
+    <hr>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 4 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 4: Frameset Layout</h2>
+
+    <p>
+        The following demonstrates the requested frameset structure.
+        Frameset is obsolete in HTML5 but is used here because it is
+        specifically required by the assignment.
+    </p>
+
+    <iframe
+        width="800"
+        height="350"
+        title="Frameset Demonstration"
+        srcdoc='
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>Frameset Example</title>
+            </head>
+
+            <frameset rows="30%,70%">
+
+                <frame
+                    srcdoc="<html><body>
+                        <a href=&quot;#&quot;>Home</a> |
+                        <a href=&quot;#&quot;>About</a> |
+                        <a href=&quot;#&quot;>Contact</a>
+                    </body></html>">
+
+                <frame
+                    srcdoc="<html><body>
+                        <h2>Welcome to My Website</h2>
+                    </body></html>">
+
+            </frameset>
+
+            </html>
+        '>
+    </iframe>
+
+    <hr>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 5 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 5: UTF-8 Encoding</h2>
+
+    <p>
+        English: Welcome to my webpage.
+    </p>
+
+    <p>
+        Hindi: मेरी वेबसाइट में आपका स्वागत है।
+    </p>
+
+    <p>
+        Japanese: 私のウェブページへようこそ。
+    </p>
+
+    <hr>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 6 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 6: User Registration Form</h2>
+
+    <form>
+
+        <label>Full Name:</label>
+        <input type="text" name="fullname" required>
+
+        <br><br>
+
+        <label>Email Address:</label>
+        <input type="email" name="email" required>
+
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password" required>
+
+        <br><br>
+
+        <label>Confirm Password:</label>
+        <input type="password" name="confirm_password" required>
+
+        <br><br>
+
+        <input type="submit" value="Register">
+
+    </form>
+
+    <hr>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 7 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 7: Login Form with CSRF Token</h2>
+
+    <form>
+
+        <label>Username:</label>
+        <input type="text" name="username" required>
+
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password" required>
+
+        <br><br>
+
+        <!--
+        A CSRF token helps prevent attackers from making
+        unauthorized requests on behalf of a logged-in user.
+        -->
+        <input
+            type="hidden"
+            name="csrf_token"
+            value="dummy12345">
+
+        <input type="submit" value="Login">
+
+    </form>
+
+    <hr>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 8 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 8: Feedback Form</h2>
+
+    <form method="post" action="#">
+
+        <label>Feedback:</label>
+
+        <br>
+
+        <textarea
+            name="feedback"
+            rows="5"
+            cols="40">
+        </textarea>
+
+        <br><br>
+
+        <label>Rating:</label>
+
+        <br>
+
+        <input type="radio" name="rating" value="Good">
+        <label>Good</label>
+
+        <br>
+
+        <input type="radio" name="rating" value="Average">
+        <label>Average</label>
+
+        <br>
+
+        <input type="radio" name="rating" value="Poor">
+        <label>Poor</label>
+
+        <br><br>
+
+        <input type="submit" value="Submit Feedback">
+
+    </form>
+
+    <hr>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 9 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 9: File Upload Form</h2>
+
+    <p>
+        Only JPG and PNG image files are allowed.
+    </p>
+
+    <form>
+
+        <label>Select Image:</label>
+
+        <input
+            type="file"
+            name="image"
+            accept=".jpg,.png"
+            required>
+
+        <br><br>
+
+        <input type="submit" value="Upload">
+
+    </form>
+
+    <hr>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 10 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 10: Contact Form</h2>
+
+    <form>
+
+        <label>Full Name:</label>
+
+        <input
+            type="text"
+            name="fullname"
+            placeholder="Enter your full name"
+            required>
+
+        <br><br>
+
+        <label>Email:</label>
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required>
+
+        <br><br>
+
+        <label>Subject:</label>
+
+        <input
+            type="text"
+            name="subject"
+            placeholder="Enter subject"
+            required>
+
+        <br><br>
+
+        <label>Message:</label>
+
+        <br>
+
+        <textarea
+            name="message"
+            rows="5"
+            cols="40"
+            placeholder="Enter your message"
+            required>
+        </textarea>
+
+        <br><br>
+
+        <input type="submit" value="Send Message">
+
+    </form>
+
+    <hr>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 11 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 11: Student Information</h2>
+
+    <form>
+
+        <label>Name:</label>
+
+        <input type="text" name="name" required>
+
+        <br><br>
+
+        <label>Roll Number:</label>
+
+        <input type="text" name="roll_number" required>
+
+        <br><br>
+
+        <label>Course:</label>
+
+        <select name="course" required>
+
+            <option value="" disabled selected>
+                Select Course
+            </option>
+
+            <option value="CSE">
+                Computer Science Engineering
+            </option>
+
+            <option value="IT">
+                Information Technology
+            </option>
+
+            <option value="ECE">
+                Electronics and Communication Engineering
+            </option>
+
+            <option value="ME">
+                Mechanical Engineering
+            </option>
+
+        </select>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <hr>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 12 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 12: HTML Entities</h2>
+
+    <p>
+        Less than: &lt;
+        <br>
+
+        Greater than: &gt;
+        <br>
+
+        Ampersand: &amp;
+        <br>
+
+        Double Quote: &quot;
+        <br>
+
+        Single Quote: &apos;
+        <br>
+
+        Copyright: &copy;
+        <br>
+
+        Trademark: &trade;
+        <br>
+
+        Registered: &reg;
+    </p>
+
+    <hr>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 13 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 13: Three Languages</h2>
+
+    <p>
+        English: Welcome to my website.
+    </p>
+
+    <p>
+        Hindi: मेरी वेबसाइट में आपका स्वागत है।
+    </p>
+
+    <p>
+        French: Bienvenue sur mon site web.
+    </p>
+
+    <hr>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 14 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 14: External Website</h2>
+
+    <iframe
+        src="https://www.wikipedia.org"
+        width="800"
+        height="500"
+        title="Wikipedia">
+    </iframe>
+
+    <p>
+        Some websites may not allow embedding for security reasons.
+    </p>
+
+    <hr>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 15 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 15: Payment Form</h2>
+
+    <form>
+
+        <label>Cardholder Name:</label>
+
+        <input
+            type="text"
+            name="cardholder"
+            required>
+
+        <br><br>
+
+        <label>Card Number:</label>
+
+        <input
+            type="text"
+            name="card_number"
+            required>
+
+        <br><br>
+
+        <label>Expiry Date:</label>
+
+        <input
+            type="month"
+            name="expiry"
+            required>
+
+        <br><br>
+
+        <label>CVV:</label>
+
+        <input
+            type="password"
+            name="cvv"
+            required>
+
+        <br><br>
+
+        <input type="submit" value="Pay Now">
+
+    </form>
+
+    <hr>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 16 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 16: URI Encoding</h2>
+
+    <p>
+        Encoded URL:
+    </p>
+
+    <a href="https://example.com/search?query=HTML%20%26%20CSS">
+        Search HTML & CSS
+    </a>
+
+    <p>
+        HTML%20%26%20CSS
+    </p>
+
+    <hr>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 17 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 17: Form Submission using iframe</h2>
+
+    <form
+        action="#result"
+        target="resultFrame">
+
+        <label>Enter Text:</label>
+
+        <input
+            type="text"
+            name="text"
+            required>
+
+        <input
+            type="submit"
+            value="Submit">
+
+    </form>
+
+    <br>
+
+    <iframe
+        name="resultFrame"
+        width="600"
+        height="150"
+        title="Form Result"
+        srcdoc="
+            <!DOCTYPE html>
+            <html>
+            <body>
+                <p>Submit the form to display the result.</p>
+            </body>
+            </html>
+        ">
+    </iframe>
+
+    <div id="result">
+        <p>
+            Form successfully submitted.
+        </p>
+    </div>
+
+    <hr>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 18 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 18: Quotations</h2>
+
+    <h3>Long Quote</h3>
+
+    <blockquote>
+        Learning HTML is an important step in web development.
+        HTML provides the structure of a webpage and allows us
+        to organize text, images, forms and other content.
+        Remember that &lt;HTML&gt; is the foundation of a webpage.
+    </blockquote>
+
+    <p>
+        My teacher always says,
+        <q>Practice makes perfect.</q>
+    </p>
+
+    <hr>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 19 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 19: Form Security Attributes</h2>
+
+    <form autocomplete="off">
+
+        <label>Username:</label>
+
+        <input
+            type="text"
+            name="username"
+            required>
+
+        <br><br>
+
+        <label>Email:</label>
+
+        <input
+            type="email"
+            name="email"
+            required>
+
+        <br><br>
+
+        <label>Password:</label>
+
+        <input
+            type="password"
+            name="password"
+            required>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <p>
+        Turning off autocomplete can reduce the amount of sensitive
+        information automatically stored or suggested by the browser.
+    </p>
+
+    <hr>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 20 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 20: Important Head Elements</h2>
+
+    <p>
+        The important head elements used in this document are:
+    </p>
+
+    <ul>
+
+        <li>
+            <strong>&lt;title&gt;</strong> -
+            Defines the title shown in the browser tab.
+        </li>
+
+        <li>
+            <strong>&lt;meta&gt;</strong> -
+            Provides metadata such as charset, description and author.
+        </li>
+
+        <li>
+            <strong>&lt;base&gt;</strong> -
+            Defines the base URL for relative URLs.
+        </li>
+
+        <li>
+            <strong>&lt;link&gt;</strong> -
+            Connects external resources such as a favicon.
+        </li>
+
+        <li>
+            <strong>&lt;style&gt;</strong> -
+            Defines CSS within the HTML document.
+        </li>
+
+        <li>
+            <strong>&lt;script&gt;</strong> -
+            Adds JavaScript to the webpage.
+        </li>
+
+    </ul>
+
+    <hr>
+
+    <h2>End of Assignment</h2>
+
+</body>
+
+</html>
+```
